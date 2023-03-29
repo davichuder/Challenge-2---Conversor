@@ -39,7 +39,7 @@ class CustomKeyListener implements KeyListener {
         JLabel output = (JLabel) this.conversor.getConversor().getComponents()[3];
 
 
-        if (!entrada.equals("") & !salida.equals("")) {
+        if (!entrada.equals("[Origen]") & !salida.equals("[Destino]")) {
             try {
                 Double a = Conversiones.obtenerA(this.conversor.getLista(), entrada, salida);
                 Double b = Conversiones.obtenerB(this.conversor.getLista(), entrada, salida);

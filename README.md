@@ -1,18 +1,28 @@
-## Getting Started
+#Resumen
+Conversor de unidades con interfaz grafica utilizando la libreria Swing en JAVA
+![Muestra](MD\img0.png)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+#Requisitos
+Este proyecto utilizando Visual Studio Code juntos con las siguientes extensiones
+https://github.com/alura-challenges/challenge-one-conversor-latam
 
-## Folder Structure
+#Ejecucion
+Se inicia el debug apretando F5 sobre el archivo App.java
 
-The workspace contains two folders by default, where:
+Se abrira la ventana del conversor
+![Seleccion de tipo](MD\img1.png)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Elija desde el panel lateral izquierdo el tipo de unidad a convertir
+Luego en la primer desplegable elija la unidad de origen
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Despues seleccione desde la segunda lista despleagable la unidad de destino
+![Seleccion de origen](MD\img2.png)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Seguido a esto en el cuadro de texto ingrese la cantidad a convertir
+![Seleccion de destino](MD\img3.png)
 
-## Dependency Management
+Debajo se mostrara la equivalencia entre ambas unidades
+![Conversion](MD\img4.png)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+#Aclaraciones
+Los datos de conversion de monedas fueron introducidos manualmente del dia 28/3/23

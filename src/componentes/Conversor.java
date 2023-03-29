@@ -48,7 +48,7 @@ public class Conversor {
             String opcionSeleccionada = (String) this.opcionesEntrada.getSelectedItem();
             DefaultComboBoxModel model = (DefaultComboBoxModel) this.opcionesSalida.getModel();
             model.removeAllElements();
-            model.addElement("");
+            model.addElement("[Destino]");
 
             for (String item : Conversiones.obtenerUnicosNombreBSegunNombreA(this.lista, opcionSeleccionada)) {
                 model.addElement(item);
@@ -68,7 +68,7 @@ public class Conversor {
                 output = "";
             }
             if (!Objects.isNull(input) && !Objects.isNull(output)) {
-                if (!input.equals("") & !output.equals("")) {
+                if (!input.equals("[Origen]") & !output.equals("[Destino]")) {
                     try {
                         Double a = Conversiones.obtenerA(this.lista, input, output);
                         Double b = Conversiones.obtenerB(this.lista, input, output);
@@ -115,7 +115,7 @@ public class Conversor {
 
         DefaultComboBoxModel model = (DefaultComboBoxModel) this.opcionesEntrada.getModel();
         model.removeAllElements();
-        model.addElement("");
+        model.addElement("[Origen]");
 
         for (String item : Conversiones.obtenerUnicosNombreA(lista)) {
             model.addElement(item);
